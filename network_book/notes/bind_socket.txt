@@ -1,0 +1,31 @@
+def bind_socket():
+ 27 
+ 28         try:
+ 29 
+ 30                 global host
+ 31                 global port
+ 32                 global conSocket
+ 33 
+ 34                 #outputting the current operation
+ 35                 #to the user
+ 36 
+ 37                 print("[*] Binding the port {}". format(str(port)))
+ 38 
+ 39                 #the actual binding (must be in tuple format)
+ 40 
+ 41                 conSocket.bind((host, port)) # <-- tuple (()) within method parameters
+ 42 
+ 43                 #5 is the number of times the attempted connection will be allowed to fail
+ 44                 #it will continue to try until the number of attempts has been exhausted                    
+ 45                 conSocket.listen(5)
+ 46 
+ 47         except socket.error as error_msg:
+ 48 
+ 49                 print("Socket bind error!\nError Code: {} Error Message: {}\n Retrying... ".forma    t(error_msg[0], str(error_msg[1])))
+ 50 
+ 51                 #try again by calling itself
+ 52                 bind_socket()
+ 53 
+ 54         finally:
+ 55 
+ 56                 print("port bind successful!!")
