@@ -17,7 +17,7 @@ def download_video(url):
 
 if __name__ == '__main__':
 
-    os.system("cls")
+    os.system("clear")
     time.sleep(1)
 
     print("[*] Youtube Downloader V3")
