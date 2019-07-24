@@ -9,7 +9,7 @@ def place_file(ftp_object):
 if __name__ == '__main__':
 
     # define url, creds, establish connection and log in
-    creds = ('cybersherpa.net', 'cywisp', 'DEFCONwasFUN1985$')
+    creds = ('domain', 'username', 'password')
     ftp = FTP(creds[0])
     ftp.login(user=creds[1], passwd=creds[2])
 

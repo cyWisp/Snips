@@ -13,7 +13,7 @@ def grab_file(ftp_object):
 if __name__ == '__main__':
 
     # Define domain/server and user/pass
-    creds = ('cybersherpa.net', 'cywisp', 'DEFCONwasFUN1985$')
+    creds = ('domain', 'username', 'password')
 
     # Establish FTP connection and log in
     ftp = FTP(creds[0])
