@@ -1,9 +1,0 @@
-Python Standard Library:
-	http://docs.python.org/library/
-
-Python Package Index:
-	http://pypi.python.org/ 
-
-Google Maps Package (third party):
-	http://pypi.python.org/pypi/googlemaps/
-

@@ -1,4 +1,0 @@
-Droplet Name: pySec
-IP Address: 104.131.55.172
-Username: root
-Password: 394bb5ff73837e3f74d14f392d

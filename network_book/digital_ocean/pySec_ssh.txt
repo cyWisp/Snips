@@ -1,2 +1,0 @@
-pySec pass: DEFCONrocks1985$
-orig: DEFCONwasAWESOME1985$
