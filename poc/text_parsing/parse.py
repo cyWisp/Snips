@@ -49,8 +49,10 @@ def parse(file_content):
 		for item in v:
 			software_name = item.split('"')[1]
 			version = item.split('"')[3]
-			output.append(f'{k}, "{software_name}", {version}')
-	
+			item = [k, software_name, version]
+			#output.append(f'{k}, "{software_name}", {version}')
+			output.append(item)
+
 	return output
 
 if __name__ == '__main__':
