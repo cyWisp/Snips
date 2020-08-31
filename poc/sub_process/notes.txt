@@ -1,0 +1,9 @@
+1. Start all virtual machines
+
+	*** check os! ***
+	connect via SSH
+
+2. Run update and list upgradable modules: 
+	echo "DEFCONwasFUN1985$" | sudo -S apt update
+	sudo apt list --upgradable -a
+3. 
