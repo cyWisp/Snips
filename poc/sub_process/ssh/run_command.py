@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 from paramiko import SSHClient
+from os import environ
 
-USER = 'USERNAME' 
-PASS = 'PASSWORD' 
+USER = environ['VM_USER'] 
+PASS = environ['VM_PASS']
 HOSTS = '/home/wisp/.ssh/known_hosts'
 
 if __name__ == '__main__':
@@ -10,7 +11,7 @@ if __name__ == '__main__':
 	client = SSHClient()
 	client.load_host_keys(HOSTS)
 	client.connect(
-		'192.168.251.128',
+		'192.168.251.130',
 		username=USER,
 		password=PASS,
 	)

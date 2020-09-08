@@ -1,7 +1,9 @@
 #!/usr/bin/env python
-import os
+from os import environ
 
 if __name__ == '__main__':
 
-	for k, v in os.environ.items():
-		print(f"{k}: {v}")
+#	for k, v in environ.items():
+#		print(f"{k}: {v}")
+
+	print(environ['VM_USER'])
