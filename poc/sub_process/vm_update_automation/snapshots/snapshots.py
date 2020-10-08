@@ -53,6 +53,7 @@ def main_menu(snaps):
             print("[x] Please make a valid selection...")
             sleep(2)
             continue
+        
         else: 
             print(choice)
             sleep(2)
